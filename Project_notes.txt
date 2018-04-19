@@ -1,0 +1,51 @@
+Project notes:
+
+Some notes to help jog the memory...
+
+- CSS Animations
+    note: need to add rules seperatly for differant browsers
+    add @-webkit- rule, and as another line of code wherever mentioned.
+    @keyframes fadeBounce {
+        0% {
+            opacitiy: 0;
+            transform: translateY(-200%);
+        }
+        55% {
+            transform: translateY(-6px);
+        }
+        70% {
+            transform: translateY(0);
+        }
+        85% {
+            transform: translateY(-3px)
+        }
+        100% {
+            opacitiy: 1;
+            Transform: translateY(0);
+        }
+    }
+--> Add the below to the applicable class
+    .class{
+        opacitiy: 0;
+        animation-name: fadeBounce;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+
+-- Practice using screen size overrides for devices:
+    @media screen and (max-width: 480px) {
+        .appropriate class here {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+    }
+---> These come after the elements in question within the style sheet
+---> Adjust the browser to be about the size of the screen you are working on
+---> Style for both 700px (tablet) and 480px (smartphone) screen size
+---> Can also style for very large screens as well using (min-width: 1300px) 
+-----> remember to increase the defualt font size for a larger screen
+-----> View port abbreviations
+        xs- Extra Small (smartphone)
+        sm= Small (tablet)
+        md= Medium (laptop or med monitor)
+        lg= Large (desktop LG monitor)

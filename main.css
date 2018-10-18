@@ -1,27 +1,35 @@
 /* STAR LOG Style Sheet */
 
+/*Header Text*/
+
+.header {
+    font-family: fantasy;
+}
+
 /*site navigation*/
 .navigation {
-    display: block;
+    display: flex;
     border: solid black;
 }
 
 .navigation li {
     list-style: none;
-    float: left;
+    display: flex;
+    flex-direction: row;
 }
 
 .navigation a {
-    display: block;
     padding: 10px;
 }
 
 /*end site navigation*/
 
+
+
 /* main area */
-.main-container {
-    display: block;
-    float: left;
+.main-container .content-area_group {
+    display: flex;
+    flex-direction: row;
     width: 80%;
     box-sizing: border-box;
     border: solid black;
@@ -35,24 +43,7 @@
    display: block;
    width: 20%;
    box-sizing: border-box;
-   float: left;
    border: solid black;
 }
 
 /* end sidebar */ 
-
-/* Float Clear */
-
-.group:before,
-.group:after {
-	content: "";
-	display: table;
-}
-
-.group:after {
-	clear: both;
-}
-
-.group {
-	zoom: 1;
-}

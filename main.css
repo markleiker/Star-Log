@@ -1,5 +1,13 @@
 /* STAR LOG Style Sheet */
 
+/*Whole page CSS*/
+
+.body {
+    background-image: url("Media/JPG/index_BG.jpg");
+    background-size: cover;
+    color: whitesmoke;
+}
+
 /*Header Text*/
 
 .header {
@@ -9,13 +17,15 @@
 /*site navigation*/
 .navigation {
     display: flex;
+    flex-direction: row;
     border: solid black;
 }
 
-.navigation li {
+.nav_group {
     list-style: none;
     display: flex;
     flex-direction: row;
+    text-decoration: none;
 }
 
 .navigation a {
@@ -24,16 +34,35 @@
 
 /*end site navigation*/
 
-
-
 /* main area */
 .main-container .content-area_group {
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: cover;
     box-sizing: border-box;
     border: solid black;
+}
 
+.button {
+    background-color: transparent;
+    border: solid whitesmoke;
+    color: whitesmoke;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 12px;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+.text-area {
+    box-sizing: border-box;
+    height: 250px;
+    width: 500px;
 }
 
 /* end main area */

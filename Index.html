@@ -11,13 +11,13 @@
         <script src="main.js"></script>
     </head>
 
-    <body>
+    <body class="body">
         <div class="content-area_group">
             <header>
                 <h1>STAR LOG</h1>
 
                 <nav class="navigation">
-                    <ul class="group">
+                    <ul class="nav_group">
                         <li><a href="index.html">Main Log</a></li>
                         <li><a href="profile.html">Profile</a></li>
                         <li><a href="Workitems.html">Work Items</a></li>
@@ -31,27 +31,35 @@
                             Short discription on how to use the Main Log here. 
                             orem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam dui condimentum libero tincidunt, sit amet viverra nunc rutrum. Fusce molestie diam nisl, nec tempor arcu ultricies at. Cras euismod feugiat imperdiet. Praesent lacinia porttitor ante, sit amet posuere nibh rhoncus a. <br> 
                             ut mauris lorem. Curabitur ac facilisis arcu. Donec porta enim tellus, blandit condimentum arcu pharetra placerat. Duis arcu arcu, fringilla a tortor vel, feugiat vestibulum neque. Fusce vitae magna in sapien mollis ornare. Suspendisse congue ac velit vel luctus. Morbi porttitor sapien eu metus feugiat consequat.
-
-            Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer sed lacinia urna. Proin at sagittis urna, eget finibus ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu velit ultricies metus rhoncus sodales in vel sem. Integer non massa rhoncus, porttitor ligula at, imperdiet nibh. Mauris nunc urna, maximus non dictum quis, pharetra at velit. Morbi enim nisi, efficitur tristique ex at, consequat pellentesque nulla. Praesent porta tempor ligula vel egestas. Etiam non dolor nulla. Cras fringilla metus id orci imperdiet, vel venenatis erat elementum. Morbi lacinia mauris et tortor volutpat, id feugiat sem consectetur. Nulla egestas auctor consequat. Quisque in mauris tincidunt, euismod tortor in, fringilla ante. Quisque congue sit amet lectus porta feugiat. Curabitur interdum nunc vel consequat suscipit.
                         </p>
 
                         <div class="text-box group">
-                            <h2>Enter Free Text Here:</h2>
-                        
-                            <textarea class="text-area"></textarea>
+                            <form>
+                                <h2>Severity Of Issue:</h2>
+                                    <button class="button" type="button" >Mission Critical</button>
+                                    <button class="button" type="button" >Immediate</button>
+                                    <button class="button" type="button" >Severe</button>
+                                    <button class="button" type="button" >Low impact</button>
+
+                                <h2>Please provide details on your request:</h2>
+                                    <textarea class="text-area"></textarea>
+                                    <br/>
+                                    <button class="button" type="button" >Submit</button>
+                            </form>
                         </div>
 
-                </div>
-            
+                </div><!--main-container-->
+
+            <!-- Side bar area... May not be used
             <aside class="sidebar">
                 <h3>Here is the sidebar with some addtional details</h3>
                 <p>Short discription here</p>
             </aside>
-        
+        -->
         </div>
     </body>
 
     <footer>
         <p>Copyright Big Pine Dev 2018</p>
     </footer>
-</html>>
+</html>
